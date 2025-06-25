@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href= "{{ url_for('static', filename = 'css/about.css') }}" >
+  </head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">FAT<span>2</span>FIT</h1>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/diet_workout">Diet & Workout</a></li>
+        <li><a href="/workout_tut">Workout Tutorials</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+  <div class="image">
+    <img src="{{ url_for('static', filename = 'about.png') }}"></div>
+    <div class="content">
+    <h2>About Us</h2>
+        <p>Welcome to LM Gym, your one-stop destination for achieving a healthier, fitter, and happier version of yourself. We believe that fitness is not just about working out – it’s a lifestyle. Whether you’re new to fitness or an experienced athlete, we’re here to support you every step of the way with personalized guidance, resources, and expert advice.</p>
+    <h2>Our Mission</h2>
+        <p>At LM Gym, our mission is to empower individuals to take control of their health and well-being through proper nutrition, effective workouts, and a supportive community. We strive to make fitness accessible, enjoyable, and sustainable for everyone, regardless of their fitness level or goals.</p>
+    <h2>What We Offer</h2>
+        <ul>
+          <li>Nutrition Chatbot: Our intelligent chatbot provides real-time, personalized nutrition advice, helping you make healthier food choices tailored to your unique needs and goals.</li>
+          <li> Diet & Workout Recommendations: Using advanced algorithms, we offer customized diet and workout plans to help you reach your fitness targets faster, while maintaining balance and wellness in your daily life.</li>
+           <li>Workout Tutorials: Whether you’re a beginner or a pro, our step-by-step workout tutorials will guide you through each movement, ensuring proper form and maximum results.</li>
+      </ul>
+    <h2>Our Philosophy</h2>
+          <p>We believe in a holistic approach to fitness – combining exercise, nutrition, and mental well-being. By focusing on these key areas, we help you build strength, endurance, and confidence both in and out of the gym. We don’t just want to help you get fit – we want to help you feel your best.</p>
+ </div>
+</div> 
+
+<footer>
+  <p>2025 LM Gym</p>
+</footer>
+  </body>
+</html>

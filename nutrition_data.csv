@@ -1,0 +1,112 @@
+food_name,calories,carbs,protein,fats
+Apple,52,13.8,0.3,0.2
+Banana,89,22.8,1.1,0.3
+Orange,47,11.8,0.9,0.1
+Strawberry,32,7.7,0.7,0.3
+Mango,60,15,0.8,0.4
+Watermelon,30,7.6,0.6,0.2
+Grapes,69,18.1,0.7,0.2
+Pineapple,50,13.1,0.5,0.1
+Peach,39,9.6,0.9,0.2
+Avocado,160,8.5,2,14.7
+Blueberry,57,14.5,0.7,0.3
+Papaya,43,10.8,0.5,0.3
+Pear,57,15.2,0.4,0.1
+Kiwi,61,14.7,1.1,0.5
+Plum,46,11.4,0.7,0.3
+Cherries,50,12,1,0.3
+Raspberry,52,11.9,1.5,0.7
+Blackberry,43,9.6,1.4,0.5
+Cantaloupe,34,8.2,0.8,0.2
+Fig,74,19.2,0.8,0.2
+Grapefruit,42,10.5,0.8,0.1
+Apricot,48,11.1,0.5,0.5
+Date,277,75,1.8,0.2
+Pomegranate,83,18.7,1.7,1.2
+Lychee,66,16.5,0.8,0.4
+Dragon Fruit,50,11,1,0.1
+Jackfruit,95,23.2,1.7,0.6
+Coconut (fresh),354,15.2,3.3,33.5
+Persimmon,81,22,0.6,0.2
+Pluot,70,18,1,0.5
+Mulberry,43,9.8,1.4,0.4
+Tangerine,53,13.3,0.8,0.3
+Nectarine,44,10.5,0.9,0.3
+Starfruit,31,7.5,0.9,0.3
+Papaya (Dried),339,85,2.4,0.5
+Raisin,299,79,2.5,0.5
+Gooseberry,44,10.1,1,0.3
+Acai Berry (Frozen),70,4,1,5
+Maracuja (Passion Fruit),97,23.4,2.2,0.4
+Quince,57,15.3,0.4,0.1
+Dragon Fruit (Pink),50,11,1,0.1
+Apricot (Dried),241,63.9,3.4,0.5
+Spinach,23,3.6,2.9,0.4
+Broccoli,34,6.6,2.8,0.4
+Carrot,41,9.6,0.9,0.2
+Tomato,18,3.9,0.9,0.2
+Cucumber,16,3.6,0.7,0.1
+Cauliflower,25,4.9,1.9,0.3
+Zucchini,17,3.1,1.2,0.3
+Bell Pepper (Red),31,6,1,0.3
+Bell Pepper (Green),20,4.6,0.9,0.2
+Lettuce,15,2.9,1.4,0.2
+Asparagus,20,3.9,2.2,0.1
+Cabbage,25,5.8,1.3,0.1
+Eggplant,25,5.9,0.8,0.2
+Sweet Potato,86,20.1,1.6,0.1
+Brussels Sprouts,43,8.9,3.4,0.3
+Beetroot,43,9.6,1.6,0.2
+Celery,16,3.5,0.7,0.2
+Kale,49,8.8,4.3,0.9
+Chard,19,3.7,1.8,0.2
+Radish,16,3.4,0.7,0.1
+Green Beans,31,7.1,1.8,0.1
+Peas,81,14.5,5.4,0.4
+Artichoke,47,10.5,3.5,0.2
+Fennel,31,7.3,1.2,0.2
+Mushrooms (White),22,3.3,3.1,0.3
+Leeks,31,7.3,1.5,0.3
+Chili Pepper,40,9.5,1.9,0.4
+Pumpkin,26,6.5,1,0.1
+Okra,33,7.5,2,0.2
+Turnip,28,6.4,0.9,0.1
+Almonds,579,21.6,21.1,49.9
+Cashews,553,30.2,18.2,43.9
+Walnuts,654,13.7,15.2,65.2
+Pistachios,562,27.2,20.2,45.3
+Peanuts,567,16.1,25.8,49.2
+Sunflower Seeds,584,20,20.8,51.5
+Chia Seeds,486,42.1,16.5,30.7
+Flaxseeds,534,28.9,18.3,42.2
+Pumpkin Seeds,559,10.7,29.8,49.1
+Hemp Seeds,553,8.7,31.6,47
+Brazil Nuts,659,12.3,14.3,67.1
+Macadamia Nuts,718,13.8,8,75.8
+Hazelnuts,628,16.7,14.1,60.8
+Chestnuts,213,45,2.4,2.2
+Pine Nuts,673,13.1,13.7,68.3
+Coconut Oil,862,0,0,100
+Olive Oil,884,0,0,100
+Avocado Oil,884,0,0,100
+Canola Oil,884,0,0,100
+Butter,717,0.1,0.9,81.1
+Ghee,876,0.1,0.2,99.8
+Soy Sauce,53,4.9,8.1,0.3
+Honey,304,82.4,0.3,0
+Maple Syrup,260,67.1,0.1,0.1
+Molasses,290,74.7,0.9,0
+Yogurt (Whole Milk),61,4.7,3.5,3.3
+Greek Yogurt (Plain),59,3.6,10,0.4
+Cottage Cheese (Low-fat),98,3.4,11.1,4.3
+Cheddar Cheese,402,1.3,24.9,33.1
+Parmesan Cheese,431,3.6,38,29
+Mozzarella,280,2.2,28,17
+Milk (Whole),61,4.8,3.2,3.3
+Skim Milk,34,5,3.4,0.1
+Egg,155,1.1,13,11
+Chicken Breast (Cooked),165,0,31,3.6
+Beef (Cooked),250,0,26,17
+Salmon (Cooked),206,0,22,12
+Tuna (Canned in Water),132,0,28,1
+Guava,68,14,2.6,1

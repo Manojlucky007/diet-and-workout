@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href= "{{ url_for('static', filename = 'css/style.css') }}" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+  <main>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">FAT<span>2</span>FIT</h1>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/diet_workout">Diet & Workout</a></li>
+        <li><a href="/workout_tut">Workout Tutorials</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="cont">
+    <p>Build <span>Aesthetic</span> Body<br>With Clear<span>Mind</span></p>
+  </div>
+  <div class="intro">
+    <p>Start your fitness journey with us! Get personalized diet and workout plans, real-time nutrition advice with our chatbot, and step-by-step workout tutorials. Let’s build a healthier, stronger you!</p>
+  </div>
+   
+  <div class="contact">
+    <div class="contact-icons">
+        <a href="https://github.com/Manojlucky007" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/manoj-kumar-b339002b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:your-jeyammech1997@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+   
+      <button id="chatbot-button" onclick="toggleChatbot()">Chat with us</button>
+
+
+    <div id="chatbot-container">
+        <div id="chatbot-header">
+            Nutrition Chatbot 
+
+            <button id="refresh-button" onclick="refreshChat()">Refresh</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="userInput" placeholder="Ask about food..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+  </main>
+    <script>
+        function toggleChatbot() {
+            const container = document.getElementById("chatbot-container");
+            container.style.display = container.style.display === "none" ? "block" : "none";
+        }
+
+        async function sendMessage() {
+            const userInput = document.getElementById("userInput");
+            const message = userInput.value;
+
+            if (message.trim() === "") return;
+
+            const messages = document.getElementById("chatbot-messages");
+            messages.innerHTML += `<div><strong>You:</strong> ${message}</div>`;
+
+            const response = await fetch("http://127.0.0.1:5000/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: message })
+            });
+
+            const data = await response.json();
+
+            messages.innerHTML += `<div><strong>Bot:</strong> ${data.response}</div>`;
+            messages.scrollTop = messages.scrollHeight;
+
+            userInput.value = "";
+        }
+
+        function refreshChat() {
+            document.getElementById("chatbot-messages").innerHTML = "";
+            document.getElementById("userInput").value = "";
+        }
+    </script>
+
+<footer>
+  <p>2025 LM Gym</p>
+</footer>
+</body>
+</html>

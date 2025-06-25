@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet and Workout Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/diet_&_workout_style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">FAT<span>2</span>FIT</h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/diet_workout">Diet & Workout</a></li>
+                <li><a href="/workout_tut">Workout Tutorials</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="header-1">Diet and Workout Recommendation</h1>
+
+    <div class="container">
+
+         <main>
+        <div class="form-container">
+            <h2>Diet Recommendation</h2>
+            <form action="/predict" method="post">
+                <label>Age</label><br>
+                <input type="number" name="age" required><br><br>
+
+                <label>BMI</label><br>
+                <input type="number" name="bmi" step="0.1" required><br><br>
+
+                <label>Gender</label><br>
+                <select name="sex" required>
+                    <option disabled selected></option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select><br><br>
+
+                <label>Hypertension</label><br>
+                <select name="hypertension" required>
+                    <option disabled selected></option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select><br><br>
+
+                <label>Diabetes</label><br>
+                <select name="diabetes" required>
+                    <option disabled selected></option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select><br><br>
+
+                <label>Fitness Goal</label><br>
+                <select name="fitness_goal" required>
+                    <option disabled selected></option>
+                    <option value="1">Weight Loss</option>
+                    <option value="0">Weight Gain</option>
+                </select><br><br>
+
+                <label>Fitness Type</label><br>
+                <select name="fitness_type" required>
+                    <option disabled selected></option>
+                    <option value="0">Cardio</option>
+                    <option value="1">Muscular Fitness</option>
+                </select><br><br>
+
+                <label>Body Level</label><br>
+                <select name="bodysize" required>
+                    <option disabled selected></option>
+                    <option value="level_normal">Normal</option>
+                    <option value="level_obese">Obese</option>
+                    <option value="level_overweight">Overweight</option>
+                    <option value="level_underweight">Underweight</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            {% if recommended_diet %}
+            <section>
+                <h3>Your Recommended Diet Plan:</h3>
+                <p>{{ recommended_diet|safe }}</p>
+            </section>
+            {% endif %}
+        </div>
+         </main>
+    
+         <main>
+        <div class="form-container">
+            <h2>Workout Recommendation</h2>
+            <form action="/predict_w" method="post">
+                <label>Age</label><br>
+                <input type="number" name="age" required><br><br>
+
+                <label>BMI</label><br>
+                <input type="number" name="bmi" step="0.1" required><br><br>
+
+                <label>Gender</label><br>
+                <select name="sex" required>
+                    <option disabled selected></option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select><br><br>
+
+                <label>Hypertension</label><br>
+                <select name="diabetes" required>
+                    <option disabled selected></option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select><br><br>
+
+                <label>Fitness Goal</label><br>
+                <select name="fitness_goal" required>
+                    <option disabled selected></option>
+                    <option value="1">Weight Loss</option>
+                    <option value="0">Weight Gain</option>
+                </select><br><br>
+
+                <label>Fitness Type</label><br>
+                <select name="fitness_type" required>
+                    <option disabled selected></option>
+                    <option value="0">Cardio</option>
+                    <option value="1">Muscular Fitness</option>
+                </select><br><br>
+
+                <label>Body Level</label><br>
+                <select name="bodysize" required>
+                    <option disabled selected></option>
+                    <option value="level_normal">Normal</option>
+                    <option value="level_obese">Obese</option>
+                    <option value="level_overweight">Overweight</option>
+                    <option value="level_underweight">Underweight</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            {% if recommended_workout %}
+            <section>
+                <h3>Your Recommended Workout Split:</h3>
+                <p>{{ recommended_workout|safe }}</p>
+            </section>
+            {% endif %}
+        </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>2025 LM Gym</p>
+    </footer>
+</body>
+</html>
