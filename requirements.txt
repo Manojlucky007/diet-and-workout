@@ -3,3 +3,5 @@ pandas
 flask
 scikit-learn
 joblib
+gdown
+gunicorn
